@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <!-- React insere/tira todos elementos dentro de uma div. -->
+    <div id="root"> 
+
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- função principal do Babel é converter código moderno (ES6+, JSX, etc.) em JavaScript compatível com navegadores antigos -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- <script src="index.js"></script> -->
+    <script type="text/babel">
+        // Utilizando JSX 
+        const root = document.querySelector("#root");
+
+        const page = () => {
+            return <div>
+                <h1 id="titulo">Titulo</h1>
+                <h2 id="subtitulo">subtitulo</h2>
+            </div>
+        }
+        ReactDOM.render(page(), root);
+
+    </script>
+</body>
+</html>

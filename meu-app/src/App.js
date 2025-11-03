@@ -1,9 +1,13 @@
 import './App.css';
 import Header from "./Header.js";
+import Counter from "./Counter.js";
 
 function App() {
   return (
-    <Header name="Nome do Header" links= {["About", "Buy", "Contact", "Login"]}></Header>
+    <div>
+      <Header name="Nome do Header" links= {["About", "Buy", "Contact", "Login"]}></Header>
+      <Counter count={5}></Counter>
+    </div>
   );
 }
 
